@@ -1,3 +1,8 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(GeraldinePersonalUseItalic-PK12m.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,5 +11,39 @@
 
 html {
     font-size: 10px;
-    font-family:  'Poppins', sans-serif;
+}
+body{
+    background-color:hsl(210, 36%, 96%) ;
+}
+main{
+    width:100vw;
+    height: 100vh;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    display: flex;
+    justify-content: center;
+}
+.questions{
+    height: 100%;
+    width:600px;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    background-color: aqua;
+    width:100%;
+    flex-grow: 1.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    letter-spacing: 2px;
+    color: orangered;
+    font-family: myFirstFont;
+}
+.question{
+    background-color: red;
+    width:100%;
+    flex-grow: 1;
 }
